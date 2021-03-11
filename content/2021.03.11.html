@@ -102,14 +102,14 @@ img.add_border {
             <header class="site-navbar py-4 bg-white" role="banner">
               <div class="container-fluid">
                 <div class="row align-items-center">
-                <h1>cmstemplate</h1>
+                <h1>The Process of Learning</h1>
                 <div class="pl-4">
                     <form>
                     <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
                     </form>
                 </div>
                   <!-- <div class="col-11 col-xl-2">
-                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cmstemplate</a></h1> 
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">The Process of Learning</a></h1> 
                   </div>
                   -->
                   <div class="col-12 col-md-10 d-none d-xl-block">
@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='CMSiMDE.html'>CMSiMDE</a><ul class='dropdown'><li class='has-children'><a href='基本操作.html'>基本操作</a><ul class='dropdown'><li><a href='編輯網頁內容.html'>編輯網頁內容</a><li><a href='上傳與引用檔案.html'>上傳與引用檔案</a><li><a href='上傳與引用圖片.html'>上傳與引用圖片</a><li><a href='嵌入程式碼.html'>嵌入程式碼</a><li><a href='嵌入影片檔.html'>嵌入影片檔</a><li><a href='檢視 STL.html'>檢視 STL</a></li></ul><li><a href='Gitlab 同步.html'>Gitlab 同步</a><li><a href='Heroku 部署.html'>Heroku 部署</a><li><a href='Fossil SCM.html'>Fossil SCM</a></li></ul><li><a href='建立網頁.html'>建立網頁</a><li class='has-children'><a href='注意事項.html'>注意事項</a><ul class='dropdown'><li><a href='標題選擇.html'>標題選擇</a><li><a href='靜態網頁 404.html'>靜態網頁 404</a><li><a href='動態網站錯誤.html'>動態網站錯誤</a></li></ul><li><a href='延伸開發.html'>延伸開發</a></li>
+                     <li><a href='倉儲.html'>倉儲</a><li class='has-children'><a href='2021.html'>2021</a><ul class='dropdown'><li><a href='2021.03.02.html'>2021.03.02</a><li><a href='2021.03.04.html'>2021.03.04</a><li><a href='2021.03.11.html'>2021.03.11</a></li>
                       </ul>
                 </nav>
               </div>
@@ -133,14 +133,15 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">標題選擇 << <a href='標題選擇.html'>Previous</a> <a href='動態網站錯誤.html'>Next</a> >> 動態網站錯誤<br /><h1>靜態網頁 404</h1>
-<p>當使用者將近端網頁倉儲資料推向 Github 後, commit 提交訊息之後若沒有出現綠勾, 表示靜態網頁無法轉檔成功, 這時連接靜態網頁時, 將會出現 404, 通常情況下是因為倉儲中 cmsimde 子模組的版次無法與遠端 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 中的版本對應.</p>
-<p>上述靜態網頁出現 404 錯誤訊息的處理方式如下:</p>
-<ol>
-<li>從 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 倉儲中複製最新版本的版次號, 以 <a href="https://github.com/mdecourse/cmsimde/commit/1c3aeec1f5d26b421743d2f5ef8bb7d5b99292af">2021/03/03 的版次</a>為例, 版次號為 1c3aeec1f5d26b421743d2f5ef8bb7d5b99292af, 使用者只需要最前面的 7 個字元, 也就是 1c3aeec.</li>
-<li>然後在近端倉儲中, 以命令列進入 cmsimde 目錄後執行: <span style="background-color: #ffff99;">git checkout 1c3aeec</span></li>
-<li>接著退回倉儲目錄, 以 git add, git commit 及 git push 將倉儲改版內容推向 Github 後應該就可以將倉儲正確轉為靜態網站內容.</li>
-</ol><br />標題選擇 << <a href='標題選擇.html'>Previous</a> <a href='動態網站錯誤.html'>Next</a> >> 動態網站錯誤</div>
+    <div id="tipue_search_content">2021.03.04 << <a href='2021.03.04.html'>Previous</a> <br /><h1>2021.03.11</h1>
+<p>git pull origin master</p>
+<p>1.acp.bat 2.cms.bat 3.http-serve.py 4.localhost.crt 5.localhost.key move to LKH</p>
+<p><span>Reference:</span><a href="https://cythilya.github.io/2018/06/19/git-merge-branch-into-master/">https://cythilya.github.io/2018/06/19/git-merge-branch-into-master/</a></p>
+<p>acp.bat:已接將git add . 、git commit -m "message"、git push 合併</p>
+<p>cms.bat:已將cd cmsimde、python wsgi.py 合併</p>
+<p><span>---------------------------------------------------------------------------------</span></p>
+<p><span>acp.bat、cms.bat</span>將指令精簡化</p>
+<p><img alt="" height="476" src="./../images/cmd_iJ7Yg869GA.png" width="803"/></p><br />2021.03.04 << <a href='2021.03.04.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">

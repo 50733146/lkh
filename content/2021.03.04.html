@@ -102,14 +102,14 @@ img.add_border {
             <header class="site-navbar py-4 bg-white" role="banner">
               <div class="container-fluid">
                 <div class="row align-items-center">
-                <h1>cmstemplate</h1>
+                <h1>The Process of Learning</h1>
                 <div class="pl-4">
                     <form>
                     <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
                     </form>
                 </div>
                   <!-- <div class="col-11 col-xl-2">
-                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cmstemplate</a></h1> 
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">The Process of Learning</a></h1> 
                   </div>
                   -->
                   <div class="col-12 col-md-10 d-none d-xl-block">
@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='CMSiMDE.html'>CMSiMDE</a><ul class='dropdown'><li class='has-children'><a href='基本操作.html'>基本操作</a><ul class='dropdown'><li><a href='編輯網頁內容.html'>編輯網頁內容</a><li><a href='上傳與引用檔案.html'>上傳與引用檔案</a><li><a href='上傳與引用圖片.html'>上傳與引用圖片</a><li><a href='嵌入程式碼.html'>嵌入程式碼</a><li><a href='嵌入影片檔.html'>嵌入影片檔</a><li><a href='檢視 STL.html'>檢視 STL</a></li></ul><li><a href='Gitlab 同步.html'>Gitlab 同步</a><li><a href='Heroku 部署.html'>Heroku 部署</a><li><a href='Fossil SCM.html'>Fossil SCM</a></li></ul><li><a href='建立網頁.html'>建立網頁</a><li class='has-children'><a href='注意事項.html'>注意事項</a><ul class='dropdown'><li><a href='標題選擇.html'>標題選擇</a><li><a href='靜態網頁 404.html'>靜態網頁 404</a><li><a href='動態網站錯誤.html'>動態網站錯誤</a></li></ul><li><a href='延伸開發.html'>延伸開發</a></li>
+                     <li><a href='倉儲.html'>倉儲</a><li class='has-children'><a href='2021.html'>2021</a><ul class='dropdown'><li><a href='2021.03.02.html'>2021.03.02</a><li><a href='2021.03.04.html'>2021.03.04</a><li><a href='2021.03.11.html'>2021.03.11</a></li>
                       </ul>
                 </nav>
               </div>
@@ -133,10 +133,24 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">嵌入程式碼 << <a href='嵌入程式碼.html'>Previous</a> <a href='檢視 STL.html'>Next</a> >> 檢視 STL<br /><h1>嵌入影片檔</h1>
-<p>直接利用 Source code 功能, 將影片檔案的 iframe 標註放入後存檔:</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/bZupkkT4T5c" width="560"></iframe></p>
-<br />嵌入程式碼 << <a href='嵌入程式碼.html'>Previous</a> <a href='檢視 STL.html'>Next</a> >> 檢視 STL</div>
+    <div id="tipue_search_content">2021.03.02 << <a href='2021.03.02.html'>Previous</a> <a href='2021.03.11.html'>Next</a> >> 2021.03.11<br /><h1>2021.03.04</h1>
+<p>add ssh keys to<span> </span><a href="https://github.com/settings/keys">https://github.com/settings/keys</a></p>
+<p><code class="js plain">1.建立 OpenSSH key   </code></p>
+<p><code class="js plain"># pairssh-keygen -t rsa -b 4096 -C<span> </span></code><code class="js string">"使用者學號"</code></p>
+<p><code class="js string">2.Putty 作為 SSH 連線客戶端工具</code></p>
+<p><code class="js string"># <a href="https://www.putty.org/">https://www.putty.org/</a></code></p>
+<p><code class="js string">3.以 SSH 協定與 Github 連線</code></p>
+<p><code class="js string"><span>建立一對 OpenSSH key pair, private key 保留在近端, 將 public key 登記在 Github 所屬帳號設定中</span></code></p>
+<p># <span>set GIT_SSH=%Disk%:\putty\plink.exe</span></p>
+<p><code class="js string"><span>表示 git 將透過 putty 工具以 ssh 加密協定對 Github 連線</span></code></p>
+<p><code class="js string"><span>4.利用 SSH 對 Gitlab 連線</span></code></p>
+<p><code class="js string"><span>將OpenSSH 格式的 public key 登錄到 Gitlab 帳號下</span></code></p>
+<p><code class="js string"><span>利用 putty.exe 建立 session 名稱為 github.com 的設定, 其中設定 AUTH 與 Proxy 資料</span></code></p>
+<p><code class="js string"><span>在.git/config 以<span>url = git@gitlab.com:user_name/url 對 gitlab 連接</span></span></code></p>
+<p><code class="js string"><span><span>---------------------------------------------------------------------------------</span></span></code></p>
+<p>ssh:網路連線加密機制,<span>可以利用 ssh 帳號@遠端主機 ip 或符號名稱, 就可以輸入認證密碼, 登入到遠端主機,無須提供密碼認證</span></p>
+<p><span><img alt="" height="435" src="./../images/chrome_47BWqXIGHn.png" width="949"/></span></p>
+<br />2021.03.02 << <a href='2021.03.02.html'>Previous</a> <a href='2021.03.11.html'>Next</a> >> 2021.03.11</div>
         
     <!-- footer -->
       <div class="container">
